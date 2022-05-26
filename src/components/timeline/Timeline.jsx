@@ -1,6 +1,6 @@
 import "./timeline.css";
 import "./icons/t-icons.css";
-import Arrow from "/Users/whatever/Desktop/digital-resume/client/src/components/nav/icons/Arrow.jsx";
+import Arrow from "../nav/icons/Arrow";
 import CDC from "../../img/cdc.svg";
 import DappUni from "../../img/dapp-uni.png";
 import Citi from "../../img/citi.png";
