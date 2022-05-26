@@ -1,0 +1,170 @@
+.t {
+  height: calc(250vh);
+  color: var(--text-primary);
+}
+
+.t-wrapper {
+  max-width: 1080px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.t-wrapper .t-center-line {
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background-color: var(--bg-primary);
+  left: calc(50% - 2.5px);
+  top: 20px;
+  /* transform: translateY(10%); */
+}
+
+.t-wrapper .t-row {
+  display: flex;
+}
+
+.t-wrapper .row-1 {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 7%;
+}
+.t-wrapper .row-2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 7%;
+}
+
+.t-wrapper .t-row section {
+  background-color: var(--bg-primary);
+  border-radius: 10px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+
+.t-wrapper .t-row section::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: var(--bg-primary);
+  top: 28px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.row-1 section::before {
+  right: -7px;
+}
+.row-2 section::before {
+  left: -7px;
+}
+
+.t-center-line .t-scroll-icon,
+.t-row section .t-icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: var(--bg-primary);
+  display: flex;
+  line-height: 40px;
+  border-radius: 50%;
+  border: var(--text-primary) 5px inset;
+  overflow: hidden;
+}
+
+.t-center-line .t-scroll-icon {
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-90deg);
+  margin:auto;
+}
+  
+.row-1 section .t-icon {
+  top: 13px;
+  right: -62.5px;
+}
+
+.row-2 section .t-icon {
+  top: 13px;
+  left: -62.5px;
+}
+
+.t-row section .t-details,
+.t-row section .t-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.t-row section .t-details .t-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.t-row section .t-skills {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px 0 17px 0px;
+}
+
+.t-row section p,
+.t-row section li {
+  margin: 10px 0 17px -20px;
+  text-indent: 0px;
+}
+
+.t-row section li .in-bullet {
+  margin: 10px 0 17px 20px;
+  text-indent: 0px;
+}
+
+.t-row section .t-bottom a {
+  text-decoration: none;
+  background: var(--text-secondary);
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--bg-primary);
+}
+
+.t-row section .t-bottom a:hover {
+  cursor: pointer;
+}
+
+@media(max-width: 772px) {
+  .t {
+    height: 300vh;
+  }
+
+  .t-wrapper .t-center-line {
+    left: 40px;
+  }
+  .t-wrapper .t-row {
+    margin: 30px 15px 3px 80px;
+  }
+  .t-wrapper .t-row section {
+    width: 100%;
+  }
+  .row-1 section::before {
+    left: -7px;
+  }
+  .row-1 section .t-icon {
+    left: -62.5px;
+  }
+  .row-2 section .t-icon {
+    left: -62.5px;
+  }
+}
+
+@media(max-width: 440px) {
+  .t-wrapper .t-center-line,
+  .t-row section::before,
+  .t-row section .t-icon {
+    display: none;
+  }
+  .t-wrapper .t-row {
+    margin: 10px 10px;
+  }
+}

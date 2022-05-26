@@ -1,0 +1,61 @@
+.e-form {
+  font-size: large;
+  position: relative;
+  background-color: blueviolet;
+}
+
+.e-form input {
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  background-color: var(--bg-primary);
+  border: none;
+  font-size: large;
+  /* background-color:bisque; */
+  color: var(--text-primary);
+  outline: none;
+}
+
+.e-form label {
+  position: absolute;
+  bottom: -22px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  pointer-events: none;
+  /* border-bottom: 1px solid var(--text-primary); */
+  overflow: hidden;
+  display: flex;
+}
+
+.e-form label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -3px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid var(--text-secondary);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 99999;
+}
+
+.e-password {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+/* .e-form input:valid + .e-label .e-password, */
+.e-form input:focus + .e-label .e-password {
+  transform: translateY(-150%);
+  color: var(--text-secondary);
+}
+
+/* .e-form input:valid + .e-label::after, */
+.e-form input:focus + .e-label::after {
+  transform: translateX(0%);
+}

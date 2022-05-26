@@ -1,0 +1,127 @@
+.s {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.s-col {
+  flex:1;
+  display: flex;
+}
+
+.s-box {
+  flex: 1;
+  object-fit: hidden;
+}
+
+.s-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  display: flex;
+  border-radius: 30px;
+}
+
+.s-front {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  backface-visibility: hidden;
+  margin:10%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-card:hover {
+  transform: rotateY(180deg);
+}
+
+.s-card-pic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 30px;
+  opacity: 30%;
+  border: var(--text-primary) 5px inset;
+}
+
+.s-words {
+  position: absolute;
+  z-index: 99999;
+  margin-top:auto;
+  font-size: x-large;
+  color: var(--text-primary);
+  text-shadow: 1px 1px 7px darkblue, 0px 0px 5px black, -2px -2px 15px aqua;
+  text-align: center;
+}
+
+.s-back {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  backface-visibility: hidden;
+  margin:10%;
+  border-radius: 30px;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-back-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.s-back-title {
+  flex: 1;
+  position: relative;
+  z-index: 99999;
+  margin-top:auto;
+  font-size: medium;
+  color: var(--text-primary);
+  text-shadow: 1px 1px 7px darkblue, 0px 0px 5px black, -2px -2px 15px aqua;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.s-back-desc {
+  flex: 1;
+  position: relative;
+  z-index: 99999;
+  margin-top:auto;
+  font-size: small;
+  color: var(--text-primary);
+  text-shadow: 1px 1px 7px darkblue, 0px 0px 5px black, -2px -2px 15px aqua;
+  text-align: center;
+  margin:1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .s {
+    flex-direction: row;
+  }
+
+  .s-col {
+    flex-direction: column;
+  }
+  
+  .s-words {
+    font-size: small;
+  }
+
+  .s-back-title {
+    font-size: xx-small;
+  }
+
+  .s-back-desc {
+    font-size: xx-small;
+  }
+}
