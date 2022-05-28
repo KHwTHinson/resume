@@ -6,6 +6,10 @@
   --bg-primary: #282c34;
   --bg-secondary: white;
   --transition-speed: 600ms;
+  --title-size: 40px;
+  --middle-title-size: 30px;
+  --post-size: 22px;
+  --content-size: 15px;
   scroll-behavior: smooth;
 }
 

@@ -98,12 +98,12 @@
 }
 
 .t-row section .t-details .t-title {
-  font-size: 22px;
+  font-size: var(--post-size);
   font-weight: 600;
 }
 
 .t-row section .t-skills {
-  font-size: 15px;
+  font-size: var(--content-size);
   font-weight: 600;
   margin: 10px 0 17px 0px;
 }

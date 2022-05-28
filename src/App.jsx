@@ -1,4 +1,5 @@
 import Intro from "./components/intro/Intro";
+import IntroPlain from "./components/intro/IntroPlain";
 import About from "./components/about/About";
 import Nav from "./components/nav/Nav";
 import Skills from "./components/skills/Skills";
@@ -16,8 +17,8 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Nav />
-          <Intro />
-          <About />
+          <IntroPlain />
+          {/* <About /> */}
           <Skills />
           <Timeline />
         </header>

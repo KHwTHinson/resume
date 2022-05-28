@@ -1,5 +1,5 @@
 import "./nav.css";
-import Sidan from "../../img/sidan.png";
+import Hinson from "../../img/hinson.jpg";
 import Arrow from "./icons/Arrow";
 import Info from "./icons/Info";
 import Portfolio from "./icons/Portfolio";
@@ -17,14 +17,17 @@ const Nav = () => {
     <div className="navbar">
       <ul className="navbar-nav">
         <li className="logo">
-          <a onClick={() => handleClick("intro")} className="nav-link">
-            <span className="link-text">Whatever</span>
+          <a onClick={() => handleClick("introplain")} className="nav-link">
+            <span className="link-text">Hinson W</span>
             <Arrow />
           </a>
         </li>
         <li className="nav-item">
-          <a onClick={() => handleClick("intro")} className="nav-link-sidan">
-            <img src={Sidan} alt="" className="nav-icon-sidan" />
+          <a
+            onClick={() => handleClick("introplain")}
+            className="nav-link-sidan"
+          >
+            <img src={Hinson} alt="" className="nav-icon-sidan" />
           </a>
         </li>
         <li className="nav-item">

@@ -1,0 +1,390 @@
+.ip {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  overflow: hidden;
+  --icon-size: 60px;
+}
+
+.ip-head {
+  flex:1;
+  display: flex;
+}
+
+.ip-head .ip-h-right {
+  flex: 1;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 20px;
+  max-width: 200px;
+}
+
+.ip-head .ip-h-right .ip-bg-frame {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: bottom;
+  overflow: hidden;
+  border-radius: 30px;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.ip-head .ip-h-right .ip-bg-frame img {
+  width: 100%;
+}
+
+.ip-head .ip-h-right .ip-socials {
+  flex: 1;
+  display: flex;
+  justify-content:center;
+  width: 100%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.ip-head .ip-h-right .ip-socials .ip-socials-icons {
+  flex: 1;
+  height: 50%;
+  margin-bottom: auto;
+  /* background-color: #55ACEE; */
+}
+
+.ip-head .ip-h-right .ip-socials .ip-socials-icons:hover {
+  cursor: pointer;
+}
+
+.ip-head .ip-h-left {
+  flex:2;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: var(--text-primary) 3px inset;
+}
+
+
+.ip-head .ip-h-left .ip-name {
+  color: var(--text-secondary);
+  font-size: var(--title-size);
+}
+
+.ip-head .ip-h-left .ip-desc {
+  color: var(--text-primary);
+  padding-top: 15px;
+  margin-bottom: auto;
+  text-align: left;
+}
+
+.ip-head .ip-h-left .ip-edu {
+  color: var(--text-primary);
+  height: 100%;
+}
+
+.ip-head .ip-h-left .ip-edu h2 {
+  position: absolute;
+  font-size: var(--middle-title-size);
+  bottom: 0px;
+}
+
+.ip .ip-tail {
+  flex: 2;
+  background-color: var(--text-primary);
+}
+
+.ip .ip-tail .ip-t-education {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.ip .ip-tail .ip-t-education .ip-t-edu-cuhk {
+  flex: 2;
+  width: 100%;
+  height: calc(100% - 40px);
+  display: flex;
+  margin: 20px 0 20px 20px;
+}
+
+.ip .ip-tail .ip-t-education .ip-t-edu-others {
+  flex: 1;
+  width: 100%;
+  height: calc(100% - 40px);
+  display: flex;
+  margin: auto;
+  background-color: #F1F2F2;
+  margin: 20px;
+  position: relative;
+}
+
+.ip .ip-tail .ip-t-education section {
+  background-color: var(--bg-primary);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  color: var(--text-primary);
+}
+
+.ip .ip-tail section h1 {
+  font-size: var(--post-size);
+  padding-left: calc(var(--icon-size) + 10px);
+}
+
+.ip .ip-tail section h2 {
+  font-size: var(--centent-size);
+  padding-left: calc(var(--icon-size) + 10px);
+  padding-bottom: 5px;
+}
+
+.ip .ip-tail .ip-t-edu-details {
+  font-size: var(--content-size);
+}
+
+.ip-t-education section .ip-edu-icon {
+  position: absolute;
+  height: var(--icon-size);
+  width: var(--icon-size);
+  background-color: var(--bg-primary);
+  display: flex;
+  line-height: 40px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.ip-t-education .ip-t-edu-others {
+  display: flex;
+  flex-direction: column;
+}
+
+.ip-t-education .ip-t-edu-others section {
+  flex: auto;
+}
+
+.ip-t-education .ip-t-edu-others .UoM {
+  margin-bottom: 10px;
+}
+
+.ip-t-education .ip-t-edu-others .Illinois {
+  margin-top: 10px;
+}
+
+.ip-t-education .ip-t-edu-others section i {
+  max-width: 300px;
+  height: 60px;
+}
+
+.ip-t-education section .ip-edu-icon-others {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-primary);
+  display: flex;
+  line-height: 40px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.ip-t-education section .ip-edu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ip-t-education section .ip-edu-header span {
+  min-width: 90px;
+}
+
+.ip-t-education section .ip-details li {
+  transform: translateX(-20px);
+}
+
+.ip-t-education section .ip-details li ul li {
+  transform: translateX(-20px);
+  font-size: calc(var(--content-size) - 1px);
+  font-style: italic;
+}
+
+.ip-illinois-icon {
+  background-color: #fff;
+}
+
+.ip-others-details div {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .ip-head .ip-h-left .ip-desc {
+    color: var(--text-primary);
+    font-size: calc(var(--content-size));
+    padding-top: 15px;
+    margin-bottom: auto;
+    text-align: left;
+  }
+  
+  .ip .ip-tail .ip-t-education {
+    flex-direction: column;
+  }
+
+  .ip .ip-tail .ip-t-education .ip-t-edu-cuhk {
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 20px 20px 0 20px;
+  }
+  
+  .ip .ip-tail .ip-t-education .ip-t-edu-others {
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 20px;
+  }
+
+  body {
+    margin:0;
+  }
+}
+
+.ip-tail {
+  flex:2;
+}
+
+.i-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.i-left-wrapper {
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.i-intro {
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--text-primary);
+}
+
+
+
+.i-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 15s ease-in-out infinite alternate;
+}
+
+.i-disc {
+  color: var(--text-primary);
+  font-size: x-small;
+  opacity: 80%;
+}
+
+.i-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight:bold ;
+  color:var(--text-secondary);
+  display: flex;
+  align-items: center;
+}
+
+.i-scroll {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.i-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.i-discord {
+  fill: #5865f2;
+  align-items: center;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.i-discord path {
+  fill: #fff;
+}
+
+.i-twitter  {
+  fill: #55ACEE;
+  align-items: center;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.i-twitter path {
+  fill: #F1F2F2;
+}
+
+.i-linkedin {
+  align-items: center;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+.i-spacer {
+  flex: 1;
+  /* background-color:rgb(171, 171, 49); */
+}
+
+.i-spacer-icon {
+  flex: 1;
+  /* background-color: aqua; */
+}
+
+
+.c {
+  display: flex;
+  height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.c-bg {
+  flex:1;
+  background-color: var(--bg-primary);
+  display: flex;
+  width: 70%;
+  height: 60%;
+  margin: auto;
+}
+
+.c-words {
+  flex:1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.c-end {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

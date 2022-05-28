@@ -180,7 +180,7 @@
 @media only screen and (max-width: 600px) {
   .i {
     flex-direction: column-reverse;
-    height: 190vh;
+    height: 150vh;
   }
 
   .i-right {
