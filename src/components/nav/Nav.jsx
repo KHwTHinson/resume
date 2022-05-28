@@ -31,13 +31,13 @@ const Nav = () => {
           </a>
         </li>
         <li className="nav-item">
-          <a onClick={() => handleClick("about")} className="nav-link">
+          <a onClick={() => handleClick("introplain")} className="nav-link">
             <Info />
             <span className="link-text">About</span>
           </a>
         </li>
         <li className="nav-item">
-          <a onClick={() => handleClick("skill")} className="nav-link">
+          <a onClick={() => handleClick("cardano")} className="nav-link">
             <Portfolio />
             <span className="link-text">Cardano</span>
           </a>

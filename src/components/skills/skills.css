@@ -1,14 +1,33 @@
 .s {
   height: 100vh;
   width: 100%;
-  background-color: var(--bg-primary);
   display: flex;
   flex-direction: column;
+}
+
+.s-header {
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-primary);
+  padding-top: 10px;
+}
+
+.s-header .s-h-title {
+  font-size: var(--title-size);
+}
+
+.s-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-secondary);
 }
 
 .s-col {
   flex:1;
   display: flex;
+  flex-direction: column;
 }
 
 .s-box {
@@ -104,9 +123,19 @@
   margin:1%;
 }
 
-@media only screen and (max-width: 600px) {
-  .s {
+@media only screen and (max-width: 1000px) {
+  .s-wrapper {
+    flex-direction: column;
+  }
+
+  .s-col {
     flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .s-wrapper {
+    flex-direction: column;
   }
 
   .s-col {

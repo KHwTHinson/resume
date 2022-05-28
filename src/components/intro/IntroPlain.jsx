@@ -17,11 +17,13 @@ const IntroPlain = () => {
     <div className="ip" id="introplain">
       <div className="ip-head">
         <div className="ip-h-left">
-          <div>
+          <div className="ip-h-left-desc">
             <h1 className="ip-name">Hinson Wong</h1>
             <h2 className="ip-desc">
-              Full time data analyst covering business data globally. Seeking to
-              transit into a fullstack developer, helping building out impactful
+              Cardano Enthusiat. Full time data analyst covering crypto business
+              data globally. Seeking to transit into working full time in
+              Cardano ecosystem, with fullstack development & Plutus skill
+              (Cardano Smart Contract), helping building out impactful
               blockchain projects.
             </h2>
             <h2 className="ip-desc">
@@ -153,6 +155,7 @@ const IntroPlain = () => {
                 </div>
                 <span className="ip-others-details">
                   <div>
+                    <h2>The University of Manchester</h2>
                     Alliance Manchester Business School, BBA Programme
                     (International Academic Exchange)
                     <ul>
@@ -178,6 +181,7 @@ const IntroPlain = () => {
                 </div>
                 <span className="ip-others-details">
                   <div>
+                    <h2>University of Illinois Urbana-Champaign</h2>
                     Department of Mathematics, NetMath Programme (Calculus I:
                     A+, Calculus II: A)
                   </div>

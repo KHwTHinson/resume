@@ -5,11 +5,10 @@ import Nav from "./components/nav/Nav";
 import Skills from "./components/skills/Skills";
 import Timeline from "./components/timeline/Timeline";
 import Entrance from "./components/contact/Entrance";
-import { useState } from "react";
+import Cardano from "./components/cardano/Cardano";
 import { useSelector } from "react-redux";
 
 function App() {
-  const [password, setPassword] = useState(1);
   const login = useSelector((state) => state.login.auth);
 
   if (login) {
@@ -18,6 +17,7 @@ function App() {
         <header className="App-header">
           <Nav />
           <IntroPlain />
+          {/* <Cardano /> */}
           {/* <About /> */}
           <Skills />
           <Timeline />

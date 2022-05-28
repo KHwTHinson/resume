@@ -1,0 +1,37 @@
+.cardano {
+  height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--bg-primary);
+}
+
+.cardano section {
+  background-color: var(--text-primary);
+  border-radius: 10px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+
+.cardano section .t-icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: var(--bg-secondary);
+  display: flex;
+  line-height: 40px;
+  border-radius: 50%;
+  border: var(--text-primary) 5px inset;
+  overflow: hidden;
+}
+
+.cardano section .cdn-details,
+.cardano section .t-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardano section .cdn-details .t-title {
+  font-size: var(--post-size);
+  font-weight: 600;
+}
