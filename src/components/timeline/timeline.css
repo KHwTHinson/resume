@@ -4,7 +4,7 @@
 }
 
 .t-wrapper {
-  max-width: 1080px;
+  max-width: 1296px;
   margin: 50px auto;
   position: relative;
 }
@@ -78,16 +78,17 @@
   left: 50%;
   transform: translateX(-50%) rotate(-90deg);
   margin:auto;
+  align-items: center;
 }
   
 .row-1 section .t-icon {
   top: 13px;
-  right: -62.5px;
+  right: -70px;
 }
 
 .row-2 section .t-icon {
   top: 13px;
-  left: -62.5px;
+  left: -70px;
 }
 
 .t-row section .t-details,

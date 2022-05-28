@@ -17,12 +17,24 @@ const IntroPlain = () => {
     <div className="ip" id="introplain">
       <div className="ip-head">
         <div className="ip-h-left">
-          <h1 className="ip-name">Hinson Wong</h1>
-          <h2 className="ip-desc">
-            Full time data analyst covering business data globally. Seeking to
-            transit into a fullstack developer, helping building out impactful
-            blockchain projects.
-          </h2>
+          <div>
+            <h1 className="ip-name">Hinson Wong</h1>
+            <h2 className="ip-desc">
+              Full time data analyst covering business data globally. Seeking to
+              transit into a fullstack developer, helping building out impactful
+              blockchain projects.
+            </h2>
+            <h2 className="ip-desc">
+              Qualifications:
+              <ul>
+                <li>
+                  Passed CFA exams (attained top 10% in all levels which have
+                  percentile revealed)
+                </li>
+                <li>Passed ACCA exams</li>
+              </ul>
+            </h2>
+          </div>
           <div className="ip-edu">
             <h2>Education</h2>
           </div>
@@ -143,6 +155,13 @@ const IntroPlain = () => {
                   <div>
                     Alliance Manchester Business School, BBA Programme
                     (International Academic Exchange)
+                    <ul>
+                      <li>
+                        Obtained first class honors in Strategy, Decision
+                        Analysis for Business & Management and Financial
+                        Engineering
+                      </li>
+                    </ul>
                   </div>
                 </span>
               </div>

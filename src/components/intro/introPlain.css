@@ -1,10 +1,14 @@
 .ip {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--bg-primary);
   overflow: hidden;
   --icon-size: 60px;
+}
+
+.ip-h-left-desc {
+  padding-bottom: 20px;
 }
 
 .ip-head {
@@ -50,7 +54,6 @@
   flex: 1;
   height: 50%;
   margin-bottom: auto;
-  /* background-color: #55ACEE; */
 }
 
 .ip-head .ip-h-right .ip-socials .ip-socials-icons:hover {
@@ -76,6 +79,12 @@
   padding-top: 15px;
   margin-bottom: auto;
   text-align: left;
+  font-size: var(--post-size);
+}
+
+.ip-head .ip-h-left .ip-desc ul li{
+  font-size: calc(var(--post-size) - 3px);
+  font-style: italic;
 }
 
 .ip-head .ip-h-left .ip-edu {
@@ -172,7 +181,7 @@
 }
 
 .ip-t-education .ip-t-edu-others section i {
-  max-width: 300px;
+  max-width: 160px;
   height: 60px;
 }
 
@@ -198,16 +207,18 @@
 
 .ip-t-education section .ip-details li {
   transform: translateX(-20px);
+  padding-top: 5px;
 }
 
 .ip-t-education section .ip-details li ul li {
   transform: translateX(-20px);
-  font-size: calc(var(--content-size) - 1px);
+  font-size: calc(var(--content-size));
   font-style: italic;
 }
 
 .ip-illinois-icon {
   background-color: #fff;
+  height: 85%;
 }
 
 .ip-others-details div {
@@ -244,147 +255,4 @@
   body {
     margin:0;
   }
-}
-
-.ip-tail {
-  flex:2;
-}
-
-.i-left {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.i-left-wrapper {
-  padding: 50px;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.i-intro {
-  font-size: 30px;
-  font-weight: 300;
-  color: var(--text-primary);
-}
-
-
-
-.i-title {
-  height: 50px;
-  overflow: hidden;
-}
-
-.i-title-wrapper {
-  height: 100%;
-  animation: move 15s ease-in-out infinite alternate;
-}
-
-.i-disc {
-  color: var(--text-primary);
-  font-size: x-small;
-  opacity: 80%;
-}
-
-.i-title-item {
-  height: 50px;
-  font-size: 30px;
-  font-weight:bold ;
-  color:var(--text-secondary);
-  display: flex;
-  align-items: center;
-}
-
-.i-scroll {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  bottom: 20px;
-}
-
-.i-right {
-  flex: 1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.i-discord {
-  fill: #5865f2;
-  align-items: center;
-  height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.i-discord path {
-  fill: #fff;
-}
-
-.i-twitter  {
-  fill: #55ACEE;
-  align-items: center;
-  height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.i-twitter path {
-  fill: #F1F2F2;
-}
-
-.i-linkedin {
-  align-items: center;
-  height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-
-.i-spacer {
-  flex: 1;
-  /* background-color:rgb(171, 171, 49); */
-}
-
-.i-spacer-icon {
-  flex: 1;
-  /* background-color: aqua; */
-}
-
-
-.c {
-  display: flex;
-  height: 100vh;
-  background-color: var(--bg-primary);
-}
-
-.c-bg {
-  flex:1;
-  background-color: var(--bg-primary);
-  display: flex;
-  width: 70%;
-  height: 60%;
-  margin: auto;
-}
-
-.c-words {
-  flex:1;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  font-size: xx-large;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-
-.c-end {
-  flex: 1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
 }
