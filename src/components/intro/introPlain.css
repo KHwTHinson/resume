@@ -99,7 +99,7 @@
 }
 
 .ip .ip-tail {
-  flex: 2;
+  flex: 1;
   background-color: var(--text-primary);
 }
 
