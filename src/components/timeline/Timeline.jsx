@@ -20,6 +20,9 @@ const Timeline = () => {
 
   return (
     <div className="t" id="timeline">
+      <div className="t-header">
+        <span className="t-h-title">Prior Experience</span>
+      </div>
       <div className="t-wrapper">
         <div className="t-center-line">
           <a onClick={() => handleClick("timeline")} className="t-scroll-icon">

@@ -1,6 +1,5 @@
 .s {
-  height: 100vh;
-  width: 100%;
+  height: calc(100vh - 40px);
   display: flex;
   flex-direction: column;
 }
@@ -10,17 +9,55 @@
   display: flex;
   justify-content: space-between;
   color: var(--text-primary);
-  padding-top: 10px;
+  padding: 20px;
 }
 
 .s-header .s-h-title {
   font-size: var(--title-size);
 }
 
+.s-header .s-h-side {
+  display: flex;
+  position: relative;
+}
+
+.s-header .s-side-words {
+  position: absolute;
+  top: 4px;
+  right: 200px;
+}
+
+.s-header .s-iohk-bg {
+  position: absolute;
+  height: 40px;
+  right: 10px;
+  background-color: var(--bg-secondary);
+  display: flex;
+  border: var(--bg-secondary) 5px solid ;
+}
+
+.s-header .s-iohk-bg img {
+  margin: auto;
+  height: 100%;
+}
+
+.s-header .s-iohk-bg:hover {
+  cursor: pointer;
+}
+
+.s-wrapper-space {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .s-wrapper {
   display: flex;
+  justify-content: space-around;
   height: 100%;
   width: 100%;
+  padding: 20px;
   background-color: var(--bg-secondary);
 }
 
@@ -28,16 +65,25 @@
   flex:1;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
 }
 
 .s-box {
   flex: 1;
   object-fit: hidden;
+  max-height: 500px;
+  max-width:500px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
 }
 
 .s-card {
-  width: 100%;
   height: 100%;
+  width: 100%;
   position: relative;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
@@ -47,17 +93,19 @@
 
 .s-front {
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   backface-visibility: hidden;
-  margin:10%;
-  border-radius: 30px;
+  margin:5%;
+  border-radius: 0px 40px 0 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  /* border: var(--bg-primary) 5px solid; */
 }
 
-.s-card:hover {
+.s-box:hover .s-card {
   transform: rotateY(180deg);
 }
 
@@ -67,31 +115,35 @@
   height: 100%;
   display: block;
   border-radius: 30px;
-  opacity: 30%;
-  border: var(--text-primary) 5px inset;
+  opacity: 50%;
 }
 
 .s-words {
   position: absolute;
   z-index: 99999;
   margin-top:auto;
-  font-size: x-large;
+  font-size: 30px;
   color: var(--text-primary);
-  text-shadow: 1px 1px 7px darkblue, 0px 0px 5px black, -2px -2px 15px aqua;
+  padding: 15px 70px 15px 70px;
+  /* color:rgba(0, 11, 18, 0.636); */
+  background-color:rgb(36, 46, 43);
+  /* text-shadow: 1px 1px 5px var(--bg-primary), 5px 5px 10px white, -5px -5px 20px rgb(24, 26, 126); */
   text-align: center;
+  opacity: 95%;
 }
 
 .s-back {
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   backface-visibility: hidden;
-  margin:10%;
+  margin:5%;
   border-radius: 30px;
   transform: rotateY(180deg);
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--bg-primary);
 }
 
 .s-back-container {
@@ -106,7 +158,6 @@
   margin-top:auto;
   font-size: medium;
   color: var(--text-primary);
-  text-shadow: 1px 1px 7px darkblue, 0px 0px 5px black, -2px -2px 15px aqua;
   text-align: center;
   padding-bottom: 5%;
 }
@@ -118,12 +169,33 @@
   margin-top:auto;
   font-size: small;
   color: var(--text-primary);
-  text-shadow: 1px 1px 7px darkblue, 0px 0px 5px black, -2px -2px 15px aqua;
   text-align: center;
   margin:1%;
 }
 
 @media only screen and (max-width: 1000px) {
+  .s {
+    height: 130vh;
+  }
+
+  .s-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 160px;
+  }
+
+  .s-header .s-h-title {
+    flex: 1;
+    font-size: var(--title-size);
+  }
+
+  .s-header .s-h-side {
+    flex: 1;
+    align-items: center;
+    display: flex;
+  }
+
   .s-wrapper {
     flex-direction: column;
   }
@@ -131,9 +203,23 @@
   .s-col {
     flex-direction: row;
   }
+
+  .s-words {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .s {
+    height: 300vh;
+  }
+
+
+  .s-header .s-h-side .s-side-words,
+  .s-header .s-h-side {
+    padding-top: 20px;
+  }
+
   .s-wrapper {
     flex-direction: column;
   }
@@ -143,7 +229,7 @@
   }
   
   .s-words {
-    font-size: small;
+    font-size: 30px;
   }
 
   .s-back-title {
