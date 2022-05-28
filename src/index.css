@@ -11,6 +11,7 @@
   --post-size: 22px;
   --content-size: 15px;
   scroll-behavior: smooth;
+  max-width: 1296px;
 }
 
 body {
