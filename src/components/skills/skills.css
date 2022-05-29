@@ -241,6 +241,14 @@
   .s-words {
     font-size: 20px;
   }
+
+  .s-back-title {
+    font-size: var(--content-size);
+  }
+
+  .s-back-desc {
+    font-size: calc(var(--content-size) - 2px);
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -267,10 +275,10 @@
   }
 
   .s-back-title {
-    font-size: xx-small;
+    font-size: var(--post-size);
   }
 
   .s-back-desc {
-    font-size: xx-small;
+    font-size: var(--content-size);
   }
 }
