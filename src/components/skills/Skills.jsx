@@ -42,11 +42,16 @@ const Skills = () => {
                 </div>
                 <div className="s-back">
                   <div className="s-back-container">
-                    <p className="s-back-title">SPO since Oct 2021.</p>
-                    <p className="s-back-title">Skills Involved:</p>
-                    <li className="s-back-desc">Linux server setup</li>
-                    <li className="s-back-desc">Cardano node maintenance</li>
-                    <li className="s-back-desc">Cardano-cli interaction</li>
+                    <section>
+                      <div className="s-b-details">
+                        <span className="s-b-title">Cardano SPO</span>
+                        <span>Since Oct 2021</span>
+                      </div>
+                      <p className="s-back-title">Skills Involved:</p>
+                      <li className="s-back-desc">Linux server setup</li>
+                      <li className="s-back-desc">Cardano node maintenance</li>
+                      <li className="s-back-desc">Cardano-cli interaction</li>
+                    </section>
                   </div>
                   {/* <img src={Sidan} alt="" className="s-card-pic" /> */}
                 </div>

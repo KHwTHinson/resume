@@ -37,7 +37,7 @@ const Nav = () => {
           </a>
         </li>
         <li className="nav-item">
-          <a onClick={() => handleClick("cardano")} className="nav-link">
+          <a onClick={() => handleClick("skill")} className="nav-link">
             <Portfolio />
             <span className="link-text">Cardano</span>
           </a>
