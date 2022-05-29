@@ -13,6 +13,13 @@
   scroll-behavior: smooth;
 }
 
+[data-theme='light'] {
+  --text-primary: white;
+  --text-secondary: aquamarine;
+  --bg-primary: #5a606e;
+  --bg-secondary: white;
+}
+
 body {
   margin-left: 5rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

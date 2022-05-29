@@ -5,12 +5,24 @@ import Info from "./icons/Info";
 import Portfolio from "./icons/Portfolio";
 import Skill from "./icons/Skill";
 import Theme from "./icons/Theme";
-import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { lightTheme, darkTheme } from "../../features/theme/themeSlice";
 
 const Nav = () => {
   const handleClick = (id) => {
     const element = document.getElementById(id);
     element.scrollIntoView();
+  };
+
+  const theme = useSelector((state) => state.theme.mode);
+  const dispatch = useDispatch();
+
+  const changeTheme = () => {
+    if (theme == "dark") {
+      dispatch(lightTheme(theme));
+    } else {
+      dispatch(darkTheme(theme));
+    }
   };
 
   return (
@@ -49,7 +61,7 @@ const Nav = () => {
           </a>
         </li>
         <li className="nav-item">
-          <a href="" className="nav-link">
+          <a onClick={() => changeTheme()} className="nav-link">
             <Theme />
             <span className="link-text">Theme</span>
           </a>

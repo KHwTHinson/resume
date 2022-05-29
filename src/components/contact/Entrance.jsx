@@ -19,7 +19,6 @@ const Entrance = () => {
 
   const _handleKeyDown = (e) => {
     if (e.key === "Enter") {
-      console.log(e.target.value);
       if (e.target.value == "Emurgo CV" || e.target.value == "Fiaz!!") {
         dispatch(successLogin(login));
       } else {

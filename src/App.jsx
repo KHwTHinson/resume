@@ -10,10 +10,11 @@ import { useSelector } from "react-redux";
 
 function App() {
   const login = useSelector((state) => state.login.auth);
+  const theme = useSelector((state) => state.theme.mode);
 
   if (login) {
     return (
-      <div className="App">
+      <div className="App" data-theme={theme}>
         <header className="App-header">
           <Nav />
           <IntroPlain />
@@ -27,7 +28,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" data-theme={theme}>
       <header className="App-header">
         <Nav />
         <Entrance />
