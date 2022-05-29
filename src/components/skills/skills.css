@@ -126,11 +126,12 @@
   margin-top:auto;
   font-size: 30px;
   color: var(--text-primary);
-  padding: 15px 70px 15px 70px;
+  width: 90%;
+  padding: 15px 30px 15px 30px;
   background-color:rgb(36, 46, 43);
   text-align: center;
   opacity: 95%;
-  transform: preserve-3d;
+  backface-visibility: hidden;
   transition: all 0.5s ease;
 }
 
