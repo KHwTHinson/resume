@@ -49,7 +49,6 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: flex-start;
 }
 
 .s-wrapper {
@@ -67,7 +66,6 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  align-items: center;
 }
 
 .s-box {
@@ -149,24 +147,39 @@
 
 .s-back-container {
   color: var(--text-primary);
+  width: 100%;
 }
 
-/* .s-back section .t-bottom, */
+.s-back section {
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+  align-items: center;
+}
+
+.s-back section .s-b-bottom,
 .s-back section .s-b-details {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  /* background-color: aqua; */
 }
 
-.s-back-title {
+.s-back-content ul {
+  padding: 10px 20px 0px 40px;
+}
+
+.s-back section .s-b-bottom {
+  padding: 20px;
+}
+
+.s-back-skills {
   flex: 1;
   position: relative;
   z-index: 99999;
-  margin-top:auto;
-  font-size: medium;
+  font-size: var(--content-size);
+  font-style: italic;
   color: var(--text-primary);
-  text-align: center;
-  padding-bottom: 5%;
 }
 
 .s-back section .s-b-details .s-b-title {
@@ -174,16 +187,24 @@
   font-weight: 600;
 }
 
-
 .s-back-desc {
   flex: 1;
   position: relative;
   z-index: 99999;
   margin-top:auto;
-  font-size: small;
+  font-size: var(--content-size);
   color: var(--text-primary);
-  text-align: center;
-  margin:1%;
+}
+
+.s-back section a {
+  text-decoration: none;
+  background: var(--text-secondary);
+  padding: 7px 15px;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--bg-primary);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -200,7 +221,7 @@
 
   .s-header .s-h-title {
     flex: 1;
-    font-size: var(--title-size);
+   font-size: var(--middle-title-size);
   }
 
   .s-header .s-h-side {
