@@ -19,7 +19,11 @@ const Entrance = () => {
 
   const _handleKeyDown = (e) => {
     if (e.key === "Enter") {
-      if (e.target.value == "Emurgo CV" || e.target.value == "Fiaz!!") {
+      if (
+        e.target.value == "Hinson CV" ||
+        e.target.value == "Emurgo CV" ||
+        e.target.value == "Fiaz!!"
+      ) {
         dispatch(successLogin(login));
       } else {
         setPw(true);
